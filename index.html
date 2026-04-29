@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Javascript - w3shools</title>
+      <style>
+         img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- 1  -->
+      <div>
+         <h2>How to change the InnerHTML</h2>
+         <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, doloribus!</p>
+         <button onclick="document.getElementById('demo').innerHTML = 'Hello Javascript'">click me</button>
+      </div>
+
+      <!-- 2  -->
+      <div>
+         <h2>how to change the html attribute</h2>
+         <img id="my-img" src="./images/about-team-1.png" alt="Image" />
+         <button onclick="getElementById('my-img').src = './images/about-team-1.png'">Move to Image 1</button>
+         <button onclick="getElementById('my-img').src = './images/about-team-2.png'">Move to Image 2</button>
+         <button onclick="getElementById('my-img').src = './images/about-team-3.png'">Move to Image 3</button>
+         <button onclick="getElementById('my-img').src = './images/about-team-4.png'">Move to Image 4</button>
+         <button onclick="getElementById('my-img').src = './images/about-team-5.png'">Move to Image 5</button>
+         <button onclick="getElementById('my-img').src = './images/about-team-6.png'">Move to Image 6</button>
+      </div>
+
+      <!-- 3  -->
+      <div>
+         <h2>how to change the style</h2>
+         <p id="text-style" style="display: none">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+         <button
+            onclick="
+               getElementById('text-style').style.display = 'block';
+               getElementById('text-style').style.fontSize = '20px';
+               getElementById('text-style').style.backgroundColor = 'red';
+            "
+         >
+            Cick to increase the size
+         </button>
+      </div>
+   </body>
+</html>
